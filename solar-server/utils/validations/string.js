@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isOnlyNumbersAndLetters = exports.isOnlyNumbers = exports.isOnlyLetters = exports.isString = void 0;
+var isString = function (a) { return typeof a === 'string'; };
+exports.isString = isString;
+var isOnlyLetters = function (a) { return /^[a-zA-Z]+$/.test(a); };
+exports.isOnlyLetters = isOnlyLetters;
+var isOnlyNumbers = function (a) { return /^[0-9]+$/.test(a); };
+exports.isOnlyNumbers = isOnlyNumbers;
+var isOnlyNumbersAndLetters = function (a) { return /^[a-zA-Z0-9]+$/.test(a); };
+exports.isOnlyNumbersAndLetters = isOnlyNumbersAndLetters;
